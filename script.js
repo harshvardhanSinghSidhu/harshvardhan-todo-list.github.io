@@ -29,12 +29,12 @@ window.addEventListener("load", () => {
     };
 
     //Checking if content and category is not empty
-    //if (todo.content !== "" && todo.category !== "") {
+    if (todo.content !== "" && todo.category !== "") {
     todos.push(todo);
     localStorage.setItem("todos", JSON.stringify(todos));
 
     e.target.reset();
-    //}
+    }
 
     DisplayTodos();
   });
